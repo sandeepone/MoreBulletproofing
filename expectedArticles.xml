@@ -1,0 +1,18 @@
+<dataset>
+ <table name="articles">
+  <column>id</column>
+  <column>title</column>
+  <column>description</column>
+  <column>content</column>
+  <column>preview_image</column>
+  <column>section_id</column>
+  <row>
+   <value>1</value>
+   <value>PHP is Great!</value>
+   <value>Lorem ipsum dolor sit amet</value>
+   <value>Aliquam scelerisque rhoncus porttitor. Nullam eget pulvinar magna. In vel lectus ut diam adipiscing porta vitae id nisi.</value>
+   <value>php.jpg</value>
+   <value>1</value>
+  </row>
+ </table>
+</dataset>
