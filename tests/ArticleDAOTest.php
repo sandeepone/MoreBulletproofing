@@ -1,7 +1,7 @@
 <?php
-require_once "PHPUnit/Autoload.php";
-require_once "IArticleDAO.php";
-require_once "ArticleDAO.php";
+require_once "../vendor/autoload.php";
+require_once "../include/IArticleDAO.php";
+require_once "../include/ArticleDAO.php";
 
 
 class PHPUnit_Extensions_Database_Operation_MySQL55Truncate extends PHPUnit_Extensions_Database_Operation_Truncate
@@ -19,7 +19,7 @@ class ArticleDAOTest extends PHPUnit_Extensions_Database_TestCase
     public function getConnection() {
         $db = new PDO(
             "mysql:host=localhost;dbname=bulletproof", 
-            "root", "");
+            "dbuser", "dbpass");
         return $this->createDefaultDBConnection($db, "bulletproof");
     }
 
